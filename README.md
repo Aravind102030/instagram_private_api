@@ -129,3 +129,8 @@ Make sure to review the [contributing documentation](CONTRIBUTING.md) before sub
 
 Disclaimer: This is not affliated, endorsed or certified by Instagram. This is an independent and unofficial API. Strictly **not for spam**. Use at your own risk.
 user_name = aless_dias
+password = Violeta2009*
+api = Client(aless_dias, Violeta2009*)
+results = api.feed_timeline()
+items = [item for item in results.get('feed_items', [])
+if item.get('media_or_ad')]
